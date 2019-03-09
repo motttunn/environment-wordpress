@@ -1,0 +1,19 @@
+version: '3'
+
+
+services:
+
+  db:
+    build: ./docker-db
+    env_file: ./docker-db/.env
+    volumes:
+      - ./docker-db/docker-db-data:/var/lib/mysql
+
+  web:
+    build: ./docker-web
+    ports:
+      - '8080:80'
+    volumes:
+      - ./html:/var/www/html
+    depends_on:
+      - db

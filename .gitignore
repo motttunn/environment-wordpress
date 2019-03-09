@@ -1,0 +1,8 @@
+.DS_Store
+docker-db/docker-db-data/
+html/wordpress/wp/wp-admin/
+html/wordpress/wp/wp-content/
+html/wordpress/wp/wp-content/languages/
+html/wordpress/wp/wp-content/plugins/
+html/wordpress/wp/wp-content/upgrade/
+html/wordpress/wp/wp-includes/
